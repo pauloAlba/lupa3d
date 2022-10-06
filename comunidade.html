@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Lupa 3D</title>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <a href="/index.html">
+        <img src="/image/logo.svg" alt="">
+      </a>
+
+      <nav>
+        <ul class="menuSelect">
+          <a href="/index.html">
+            <li class="btnMenu">Fabricantes</li>
+          </a>
+
+          <a href="/manuais.html">
+            <li class="btnMenu">Manuais</li>
+          </a>
+
+          <a href="/comunidade.html">
+            <li class="btnMenu menuActive">Comunidade</li>
+          </a>
+
+          <li class="btnAdicionar">+ Adicionar</li>
+        </ul>
+      </nav>
+
+      <nav class="menuBurger">
+        <img class="btnBurger" src="/image/burgerMenu.png" alt="">
+        <ul>
+          <li class="btnMenu menuActive">Fabricantes</li>
+          <li class="btnMenu">Banco de dados</li>
+          <li class="btnMenu">Comunidade</li>
+          <li class="btnAdicionar">+ Adicionar</li>
+        </ul>
+      </nav>
+    </header>
+    
+
+
+    <main>
+
+      <h1>Comunidade</h1>
+
+      
+
+      <ul class="menuFabricantes">
+        <li class="btnFabricantes btn1 active"><button class="btnMenuFabricantes">Impressão em Resina</button></li>
+        <li class="btnFabricantes btn2"><button class="btnMenuFabricantes">Impressão em FDM</button></li>
+        <li class="btnFabricantes btn3"><Button class="btnMenuFabricantes">Modelagem 3D</Button></li>
+        <!-- <input type="button" name="" class="btnAdicionar" value="+ Adicionar"> -->
+      </ul>
+
+      
+      <section class="menuFabricantesEmpresas fabricantesImpressoras">
+        <ul>
+          <li> <img src="image/grupos/Impressão3DResina.jpg"> <h3>Impressão 3D - Resina</h3>   <span><a href="https://www.facebook.com/groups/impressao3dresina" target="_blank" class="visitar">Visitar grupo</a><button class="exclamacao">!</button></span></li>
+      </section>
+
+      <section class="menuFabricantesEmpresas fabricantesResinas hidden">
+        <ul>
+          <li> <img src="image/grupos/3D Impressão - Hobbystas e Principiantes.jpg"> <h3>3D Impressão - Hobbystas e Principiantes</h3>   <span><a href="https://www.facebook.com/groups/260668998582795" target="_blank" class="visitar">Visitar grupo</a><button class="exclamacao">!</button></span></li>
+        </ul>
+      </section>
+
+      <section class="menuFabricantesEmpresas fabricantesFilamentos hidden">
+        <h2>Em breve...</h2>
+        <!--
+          <ul>
+            <li> <img src="image/fabricantes/3Dfila.svg"> <h3>3D Fila</h3> <span><a href="https://3dfila.com.br/" target="_blank" class="visitar">Visitar Site</a><button class="exclamacao">!</button></span></li>
+            <li> <img src="image/fabricantes/F3d.svg"> <h3>3D Filamentos Brasil</h3> <span><a href="https://www.filamentos3dbrasil.com.br/" target="_blank" class="visitar">Visitar Site</a><button class="exclamacao">!</button></span></li>
+            <li> <img src="image/fabricantes/3Dlab.svg"> <h3>3D Lab</h3>  <span><a href="https://3dlab.com.br/" target="_blank" class="visitar">Visitar Site</a><button class="exclamacao">!</button></span></li>
+            <li> <img src="image/fabricantes/3Dvale.svg"> <h3>3D Vale</h3>  <span><a href="http://3dvale.com.br" target="_blank" class="visitar">Visitar Site</a><button class="exclamacao">!</button></span></li>
+            <li> <img src="image/fabricantes/GTMax 3D.svg" alt="">  <h3>GTMax 3D</h3>   <span><a href="https://www.gtmax3d.com.br/" target="_blank" class="visitar">Visitar Site</a><button class="exclamacao">!</button></span></li>
+            <li> <img src="image/fabricantes/national3D.svg"> <h3>National 3D</h3>  <span><a href="https://lojanational3d.mercadoshops.com.br/" target="_blank" class="visitar">Visitar Site</a><button class="exclamacao">!</button></span></li>
+            <li> <img src="image/fabricantes/up3D.svg"> <h3>UP 3D</h3>  <span><a href="https://www.up3d.com.br/" target="_blank" class="visitar">Visitar Site</a><button class="exclamacao">!</button></span></li>
+            <li> <img src="image/fabricantes/voolt3D.svg"> <h3>Voolt 3D</h3>  <span><a href="https://www.lojavoolt3d.com.br" target="_blank" class="visitar">Visitar Site</a><button class="exclamacao">!</button></span></li>
+            <li> <img src="image/fabricantes/sethi3D.svg" alt="">  <h3>Sethi 3D</h3>   <span><a href="https://www.sethi3d.com.br/" target="_blank" class="visitar">Visitar Site</a><button class="exclamacao">!</button></span></li>
+          </ul>
+        -->
+       
+      </section>
+  
+      
+    
+    </main>
+
+    <div class="modal hidden">
+      <div>
+        <h1>Encontrou algum problema?</h1>
+        <ul>
+          <li class="btnMenu" onclick="modalLink()">O link não funciona</li>
+          <li class="btnMenu" onclick="modalLink()">O link está incorreto</li>
+          <li class="btnMenu" onclick="modalLink()">Quero inserir meu link</li>
+        </ul>
+      </div>
+      <br>
+      <br>
+      <div>
+        <span onclick="modalLink()">X</span>
+      </div>
+    </div>
+
+    <div class="hidden container-email">
+      <form target="_blank" action="https://formsubmit.co/pr2013com@hotmail.com" method="POST">
+        <div class="form-group">
+          <h1>Gostaria de adicionar?</h1>
+          <div class="form-row">
+            <div class="col">
+              <input type="text" name="name" class="form-control" placeholder="Nome completo" required>
+            </div>
+            <div class="col">
+              <input type="email" name="email" class="form-control" placeholder="Email" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Sua sugestão..." class="form-control" name="message" rows="10" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-lg btn-dark btn-block">Enviar</button>
+      </form>
+    </div>
+
+  </div>
+  
+ 
+
+  <div class="overlay hidden">
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Lupa 3D</title>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <img src="/image/logo.svg" alt="">
+      <nav>
+        <ul class="menuSelect">
+          <a href="/index.html">
+            <li class="btnMenu">Fabricantes</li>
+          </a>
+
+          <a href="/manuais.html">
+            <li class="btnMenu menuActive">Manuais</li>
+          </a>
+
+          <a href="/comunidade.html">
+            <li class="btnMenu">Comunidade</li>
+          </a>
+          
+          <li class="btnAdicionar">+ Adicionar</li>
+        </ul>
+      </nav>
+
+      <nav class="menuBurger">
+        <img class="btnBurger" src="/image/burgerMenu.png" alt="">
+        <ul>
+          <li class="btnMenu menuActive">Fabricantes</li>
+          <li class="btnMenu">Banco de dados</li>
+          <li class="btnMenu">Comunidade</li>
+          <li class="btnAdicionar">+ Adicionar</li>
+        </ul>
+      </nav>
+    </header>
+    
+
+
+    <main>
+
+      <h1>Manuais</h1>
+
+      
+
+      <ul class="menuFabricantes">
+        <li class="btnFabricantes btn1 active"><button class="btnMenuFabricantes">Impressora Resina</button></li>
+        <li class="btnFabricantes btn2"><button class="btnMenuFabricantes">Em breve</button></li>
+        <li class="btnFabricantes btn3"><button class="btnMenuFabricantes">FISPQ</li>
+        <!-- <li class="btnFabricantes btn3"><Button class="btnMenuFabricantes">Impressoras FDM</Button></li> -->
+      </ul>
+
+      
+      <section class="menuFabricantesEmpresas fabricantesImpressoras">
+        <ul>
+          <li> <img src="image/fabricantes/anycubic.svg" alt=""> <h3>Anycubic</h3>   <span><a href="https://drive.google.com/drive/folders/1OelkeMmubhma-4kObRM1FVCYiES8JY6R?usp=sharing" target="_blank" class="visitar">Ver arquivos</a><button class="exclamacao">!</button></span></li>
+          <li> <img src="image/fabricantes/biqu.svg" alt=""> <h3>Biqu</h3>   <span><a href="https://drive.google.com/drive/folders/1kt32cMfCRZYBT-e-6vRp7hDkt9YeJiUx?usp=sharing" target="_blank" class="visitar">Ver arquivos</a><button class="exclamacao">!</button></span></li>
+          <li> <img src="image/fabricantes/creality.svg" alt=""> <h3>Creality</h3>   <span><a href="https://drive.google.com/drive/folders/1IyT8ENJsbYlpJTa5BywW38l1k7kegAau?usp=sharing" target="_blank" class="visitar">Ver arquivos</a><button class="exclamacao">!</button></span></li>
+          <li> <img src="image/fabricantes/elegoo.svg" alt=""> <h3>Elegoo</h3>  <span><a href="https://drive.google.com/drive/folders/1lt4wdrhKB7ArpJENTfX3PbO4c_-4GsgB?usp=sharing" target="_blank" class="visitar">Ver arquivos</a><button class="exclamacao">!</button></span></li>
+          <li> <img src="image/fabricantes/phrozen3D.svg" alt="">  <h3>Phrozen 3D</h3>   <span><a href="https://drive.google.com/drive/folders/1z8R4HZAgpm2NQ7e_34zN3zz28YDd7aZp?usp=sharing" target="_blank" class="visitar">Ver arquivos</a><button class="exclamacao">!</button></span></li>
+        </ul>
+      </section>
+
+      <section class="menuFabricantesEmpresas fabricantesResinas hidden">
+        <h2>Impressoras FDM...</h2>
+        <!--
+          <ul>
+            <li> <img src="image/fabricantes/3D Cloner.svg"> <h3>3D Cloner</h3>   <span><a href="http://3dcloner.ind.br/manuais_e_procedimentos" target="_blank" class="visitar">Ver arquivos</a><button class="exclamacao">!</button></span></li>
+            <li> <img src="image/fabricantes/3Dcure.svg"> <h3>3D Cure</h3>   <span><a href="https://3dcure.com.br/" target="_blank" class="visitar">ver arquivos</a><button class="exclamacao">!</button></span></li>
+            <li> <img src="image/fabricantes/3Dfila.svg"> <h3>3D Fila</h3> <span><a href="https://3dfila.com.br/" target="_blank" class="visitar">ver arquivos</a><button class="exclamacao">!</button></span></li>
+            <li> <img src="image/fabricantes/F3d.svg"> <h3>3D Filamentos Brasil</h3> <span><a href="https://www.filamentos3dbrasil.com.br/" target="_blank" class="visitar">ver arquivos</a><button class="exclamacao">!</button></span></li>
+            <li> <img src="image/fabricantes/3Dlab.svg"> <h3>3D Lab</h3>  <span><a href="https://3dlab.com.br/" target="_blank" class="visitar">ver arquivos</a><button class="exclamacao">!</button></span></li>
+            <li> <img src="image/fabricantes/GTMax 3D.svg" alt="">  <h3>GTMax 3D</h3>   <span><a href="https://www.gtmax3d.com.br/" target="_blank" class="visitar">ver arquivos</a><button class="exclamacao">!</button></span></li>
+            <li> <img src="image/fabricantes/makertechLabs.svg"> <h3>Makertechlabs</h3>  <span><a href="https://www.makertechlabs.com.br/" target="_blank" class="visitar">ver arquivos</a><button class="exclamacao">!</button></span></li>
+            <li> <img src="image/fabricantes/monile3D.svg"> <h3>Monile</h3>   <span><a href="https://monile.io/" target="_blank" class="visitar">ver arquivos</a><button class="exclamacao">!</button></span></li>
+            <li> <img src="image/fabricantes/odinResinas.svg"> <h3>Odin Resinas</h3>  <span><a href="https://resinaodin.com/" target="_blank" class="visitar">ver arquivos</a><button class="exclamacao">!</button></span></li>
+            <li> <img src="image/fabricantes/quanton3D.svg"> <h3>Quanton 3D</h3> <span><a href="https://www.quanton3d.com.br/" target="_blank" class="visitar">ver arquivos</a><button class="exclamacao">!</button></span></li>
+            <li> <img src="image/fabricantes/redelease.svg"> <h3>Redelease</h3>  <span><a href="https://www.redelease.com.br/" target="_blank" class="visitar">ver arquivos</a><button class="exclamacao">!</button></span></li>
+            <li> <img src="image/fabricantes/smooth3D.svg"> <h3>Smooth 3D</h3>  <span><a href="https://www.smooth3d.com.br/" target="_blank" class="visitar">ver arquivos</a><button class="exclamacao">!</button></span></li>
+            <li> <img src="image/fabricantes/wotan3D.svg"> <h3>Wotan 3D</h3>  <span><a href="https://www.wotan3d.com.br/" target="_blank" class="visitar">ver arquivos</a><button class="exclamacao">!</button></span></li>
+          </ul>
+        -->
+        
+      </section>
+
+      <section class="menuFabricantesEmpresas fabricantesFilamentos hidden">
+        <ul>
+          <li> <img src="image/fabricantes/3D Cloner.svg"> <h3>Resinas 3D</h3>   <span><a href="https://drive.google.com/drive/folders/1LZKL26d_ubd4fJLnCfV4EIxdeYM_82ob?usp=sharing" target="_blank" class="visitar">Ver arquivos</a><button class="exclamacao">!</button></span></li>
+          <li> <img src="image/fabricantes/3Dcure.svg"> <h3>Etanol</h3>   <span><a href="https://drive.google.com/file/d/1WYjOsktc2PVFiqm3BXSMefyggcxhdQ7Q/view?usp=sharing" target="_blank" class="visitar">Ver FISPQ</a><button class="exclamacao">!</button></span></li>
+          <li> <img src="image/fabricantes/3Dfila.svg"> <h3>Alcool Isopropilico</h3> <span><a href="https://3dfila.com.br/" target="_blank" class="visitar">Ver FISPQ</a><button class="exclamacao">!</button></span></li>
+          <li> <img src="image/fabricantes/F3d.svg"> <h3>Filamentos</h3> <span><a href="https://www.filamentos3dbrasil.com.br/" target="_blank" class="visitar">Ver arquivos</a><button class="exclamacao">!</button></span></li>
+        </ul>
+      </section>
+  
+      
+    
+    </main>
+
+    <div class="modal hidden">
+      <div>
+        <h1>Encontrou algum problema?</h1>
+        <ul>
+          <li class="btnMenu" onclick="modalLink()">O link não funciona</li>
+          <li class="btnMenu" onclick="modalLink()">O link está incorreto</li>
+          <li class="btnMenu" onclick="modalLink()">Quero inserir meu link</li>
+        </ul>
+      </div>
+      <br>
+      <br>
+      <div>
+        <span onclick="modalLink()">X</span>
+      </div>
+    </div>
+
+    <div class="hidden container-email">
+      <form target="_blank" action="https://formsubmit.co/pr2013com@hotmail.com" method="POST">
+        <div class="form-group">
+          <h1>Gostaria de adicionar?</h1>
+          <div class="form-row">
+            <div class="col">
+              <input type="text" name="name" class="form-control" placeholder="Nome completo" required>
+            </div>
+            <div class="col">
+              <input type="email" name="email" class="form-control" placeholder="Email" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Sua sugestão..." class="form-control" name="message" rows="10" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-lg btn-dark btn-block">Enviar</button>
+      </form>
+    </div>
+
+  </div>
+  
+ 
+
+  <div class="overlay hidden">
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
